@@ -4,9 +4,9 @@
 
 (defun Primer-impar (lista) 
 	(loop for i from 0 to (length lista) 
-			for e in lista with encontado = NIL
-			until (setq encontado (and (numberp e) (= (mod e 2) 1)))
-			finally (if encontado (return (list e i)) (return NIL) )))
+			for e in lista with encontrado = NIL
+			until (setq encontrado (and (numberp e) (= (mod e 2) 1)))
+			finally (if encontrado (return (list e i)) (return NIL) )))
 
 ;; (Primer-impar '( 1 2 3 4 5 6))
 ;; (1 0)
