@@ -7,7 +7,7 @@
 			(do ((i 0 (+ i 1)))
 				((>= i (length lista-temp)) result)
 				(if (listp (setq temp (nth i lista-temp)))
-					(print (setq lista-temp (append lista-temp temp)) )
+					(setq lista-temp (append lista-temp temp) )
 					(setq result (cons temp result)) ) )
 			result ))
 
